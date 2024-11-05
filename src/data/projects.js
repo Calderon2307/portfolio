@@ -11,6 +11,8 @@ import triviaJS from '@assets/Projects_Logos/Trivia_JS.png';
 import triviaReact from '@assets/Projects_Logos/Trivia_React.png';
 
 import css from '@assets/Technologies_Logos/css.png';
+import express from '@assets/Technologies_Logos/expressjs.webp';
+import node from '@assets/Technologies_Logos/node.png';
 import html from '@assets/Technologies_Logos/html.png';
 import javascript from '@assets/Technologies_Logos/javascript.png';
 import jetpackcompose from '@assets/Technologies_Logos/jetpackcompose.png';
@@ -209,6 +211,14 @@ export const projectsEs = [
       {
         nombre: 'Kotlin',
         imagen: kotlin,
+      },
+      {
+        nombre: 'Express',
+        imagen: express,
+      },
+      {
+        nombre: 'Node',
+        imagen: node,
       },
     ],
     tipo: 'mobile',

@@ -9,7 +9,7 @@ function calcularEdad(fechaNacimiento) {
     edad--;
   }
 
-  return `${edad} años`;
+  return `${edad}`;
 }
 
 export const personalInfoEs = [
