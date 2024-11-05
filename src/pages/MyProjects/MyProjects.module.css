@@ -1,0 +1,176 @@
+.contentWrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  width: 80%;
+  height: fit-content;
+}
+
+.featuredContainer {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(var(--secondary-color));
+}
+
+.normalContainer {
+  position: relative;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.subtitle {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: rgb(var(--text-1-color));
+}
+
+.filtersNav {
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: rgb(var(--primary-color));
+  overflow: hidden;
+  z-index: 10;
+}
+
+.filterList {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.filterItem {
+  width: 100%;
+}
+
+.filterButton {
+  all: unset;
+  padding: 0.5rem 0rem;
+  width: 100%;
+  background-color: rgb(var(--primary-color));
+  font-family: var(--text-font);
+  color: rgb(var(--text-1-color));
+  text-align: center;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.projectsCount {
+  font-family: var(--title-font);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: rgb(var(--text-1-color));
+}
+
+.filterIconButton {
+  display: none;
+  border: none;
+  outline: none;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  font-family: var(--title-font);
+  color: rgb(var(--text-1-color));
+  cursor: pointer;
+}
+
+.filterIconImg {
+  width: 100%;
+}
+
+.filterButton:hover {
+  background-color: rgb(var(--acent-color));
+  color: rgb(var(--text-2-color));
+}
+
+.filterSelected {
+  background-color: rgb(var(--acent-color));
+  color: rgb(var(--text-2-color));
+}
+
+@media (max-width: 870px) {
+  .contentWrapper {
+    gap: 1.5rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    justify-self: start;
+  }
+
+  .filtersNav {
+    width: 40%;
+    border-radius: 0rem 0rem 0rem 0.5rem;
+    position: absolute;
+    top: 2.5rem;
+    right: -100%;
+    transition: all 500ms ease;
+  }
+
+  .filterList {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+
+  .filterButton {
+    padding: 1.5rem 0rem;
+  }
+
+  .filterIconButton {
+    justify-self: end;
+  }
+
+  .filterIconButton {
+    display: block;
+  }
+
+  .filtersActive {
+    top: 2.5rem;
+    right: 0%;
+    transition: all 500ms ease;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 520px) {
+  .subtitle {
+    font-size: 1rem;
+  }
+}

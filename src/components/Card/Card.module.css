@@ -1,0 +1,204 @@
+.cardContainer {
+  perspective: 1000px;
+}
+
+.card {
+  width: 250px;
+  min-height: 375px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 600ms;
+  margin: 0 auto;
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-color: rgb(var(--primary-color));
+  backface-visibility: hidden;
+  animation: enterAnimation 1s cubic-bezier(0.2, -1, 0.01, 1.5) forwards;
+}
+
+.cardFront {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.4rem;
+  padding: 0;
+  box-shadow:
+    rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px;
+}
+
+.cardBack {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transform: rotateY(180deg);
+  animation: cardGlow 1.5s linear infinite;
+}
+
+.cardImgContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.cardTitle,
+.subtitle {
+  font-family: var(--title-font);
+  color: rgb(var(--text-1-color));
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.cardTechContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.techImgContainer {
+  width: 25px;
+}
+
+.techImg {
+  width: 100%;
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+
+.filter {
+  padding: 0.3rem 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: rgb(var(--acent-color));
+  font-family: var(--text-font);
+  color: rgb(var(--text-1-color));
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.iconFront,
+.iconBack {
+  all: unset;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  transition: all 250ms;
+}
+
+.iconBack {
+  align-self: flex-start;
+}
+
+.iconImg {
+  width: 100%;
+  cursor: pointer;
+}
+
+.cardDescription {
+  font-family: var(--title-font);
+  font-size: 0.8rem;
+  color: rgb(var(--text-1-color));
+}
+
+.projectLink {
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 3px rgb(var(--text-2-color));
+  background-color: rgb(var(--acent-color));
+  font-family: var(--text-font);
+  text-decoration: none;
+  color: rgb(var(--text-1-color));
+  transform: translateY(-0.2em);
+  transition: all 50ms ease;
+}
+
+.card:hover .iconFront,
+.iconBack {
+  filter: drop-shadow(0px 0px 5px rgb(var(--acent-color)));
+  animation: iconRotate 0.8s linear infinite;
+}
+
+.projectLink:hover {
+  color: rgb(var(--text-2-color));
+}
+
+.projectLink:active {
+  transform: translateY(0);
+  box-shadow: 0px 0px 0px rgb(var(--text-2-color));
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.paddingAdd {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex: 1 1 0;
+  padding: 0rem 0.6rem 0.6rem;
+}
+
+@keyframes enterAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes cardGlow {
+  0% {
+    box-shadow: 0px 0px 0px rgb(var(--text-1-color));
+  }
+  50% {
+    box-shadow: 0px 0px 20px rgb(var(--text-1-color));
+  }
+  100% {
+    box-shadow: 0px 0px 0px rgb(var(--text-1-color));
+  }
+}
+
+@keyframes iconRotate {
+  0% {
+    transform: scale(1) rotateZ(0deg);
+  }
+  50% {
+    transform: scale(1.3) rotateZ(-180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(-360deg);
+  }
+}

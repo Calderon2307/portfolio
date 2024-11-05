@@ -1,0 +1,139 @@
+body {
+  background-color: rgb(var(--background-color));
+}
+
+.contentWrapper {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactsContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 75%;
+  max-height: 90%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgb(var(--primary-color));
+  overflow: hidden;
+  opacity: 1;
+  animation: reveal 1s ease-out;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: rgb(var(--text-1-color));
+}
+
+.contacts {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  max-width: 60%;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  place-items: center;
+  place-content: center;
+  width: 100%;
+}
+
+.contactLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  transition: all 250ms;
+  justify-self: center;
+}
+
+.contactImg {
+  width: 100%;
+}
+
+.contactValue {
+  font-family: var(--text-font);
+  color: rgb(var(--text-1-color));
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contactLink:hover {
+  scale: 1.5;
+  filter: drop-shadow(0px 0px 5px rgb(var(--acent-color)));
+}
+
+.contactValue .contactLink:hover {
+  text-decoration: underline;
+}
+
+@keyframes reveal {
+  from {
+    max-height: 100px;
+    opacity: 0;
+  }
+  to {
+    max-height: 75vh;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1050px) {
+  .contactsContainer {
+    width: 90%;
+  }
+  .contacts {
+    min-width: 100%;
+  }
+  .contactLink {
+    width: 75px;
+  }
+}
+
+@media (max-height: 900px) {
+  .contactsContainer {
+    width: 90%;
+  }
+  .contacts {
+    width: 75%;
+  }
+  .contactLink {
+    width: 75px;
+  }
+}
+
+@media (max-height: 750px) {
+  .contactLink {
+    width: 50px;
+  }
+}
+
+@media (max-height: 550px) {
+  .contactLink {
+    max-width: 25px;
+  }
+}
+
+@media (max-width: 560px) {
+  .contactsContainer {
+    min-width: 90%;
+    padding: 2rem 0rem;
+  }
+  .contacts {
+    width: 100%;
+  }
+  .contactLink {
+    width: 50px;
+  }
+  .contactValue {
+    font-size: 0.8rem;
+  }
+}
