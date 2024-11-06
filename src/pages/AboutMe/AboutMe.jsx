@@ -35,8 +35,8 @@ const AboutMe = () => {
   };
 
   const openCV = () => {
-    if (lang === 'es') window.open('/public/docs/CV-Español.pdf', '_blank');
-    else window.open('/public/docs/CV-English.pdf', '_blank');
+    if (lang === 'es') window.open('/docs/CV-Español.pdf', '_blank');
+    else window.open('/docs/CV-English.pdf', '_blank');
   };
 
   return (
@@ -49,7 +49,7 @@ const AboutMe = () => {
         />
         <meta
           name="keywords"
-          content="desarrollador web, frontend, UI/UX, desarrollo Android, backend, soluciones tecnológicas, FedeCode, portafolio, tecnologías web, JavaScript, React, Node.js, CSS, HTML, Kotlin"
+          content="desarrollador web, frontend, UI/UX, desarrollo Android, backend, soluciones tecnológicas, FedeCode, portafolio, tecnologías web, JavaScript, React, Node.js, CSS, HTML, Kotlin, fedecode, fede"
         />
         <meta
           property="og:title"
@@ -61,18 +61,20 @@ const AboutMe = () => {
           property="og:description"
           content={
             lang === 'es'
-              ? 'Soy Fede, desarrollador web especializado en frontend, UI/UX y desarrollo Android. Descubre mi experiencia profesional y cómo puedo ayudarte a llevar tus proyectos al siguiente nivel.'
-              : "I'm Fede, a web developer specializing in frontend, UI/UX, and Android development. Discover my professional experience and how I can help elevate your projects."
+              ? 'Soy Fede, desarrollador web frontend, UI/UX y Android. Descubre cómo puedo llevar tus proyectos al siguiente nivel.'
+              : "I'm Fede, a web developer in frontend, UI/UX, and Android. Discover how I can help elevate your projects."
           }
         />
         <meta
           property="og:image"
           content={
             lang === 'es'
-              ? '/public/card_images/cardImgSobreEs.png'
-              : '/public/card_images/cardImgAboutEn.png'
+              ? '/card_images/cardImgSobreEs.png'
+              : '/card_images/cardImgAboutEn.png'
           }
         />
+        <meta property="og:url" content="https://www.fedecode.com" />
+        <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />

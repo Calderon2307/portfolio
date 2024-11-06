@@ -73,7 +73,7 @@ const MyProjects = () => {
         />
         <meta
           name="keywords"
-          content="proyectos de desarrollo, desarrollo web, aplicaciones móviles, frontend, backend, FedeCode, React, JavaScript, Kotlin, Jetpack Compose, Android, tecnologías web, portafolio"
+          content="proyectos de desarrollo, desarrollo web, aplicaciones móviles, frontend, backend, FedeCode, React, JavaScript, Kotlin, Jetpack Compose, Android, tecnologías web, portafolio, fedecode, fede"
         />
         <meta
           property="og:title"
@@ -85,18 +85,20 @@ const MyProjects = () => {
           property="og:description"
           content={
             lang === 'es'
-              ? 'Soy Fede, un desarrollador web con enfoque en frontend y desarrollo Android. Explora mis proyectos en soluciones web y móviles usando tecnologías como React y JavaScript. ¡Echa un vistazo a mi trabajo!'
-              : "I'm Fede, a web developer focused on frontend and Android development. Explore my projects in web and mobile solutions using technologies like React and JavaScript. Check out my work!"
+              ? 'Soy Fede, desarrollador web en frontend y Android. Explora mis proyectos en soluciones web y móviles con React y JavaScript. ¡Explora mi trabajo!'
+              : "I'm Fede, a frontend and Android developer. Explore my web and mobile projects using React and JavaScript. Check out my work!"
           }
         />
         <meta
           property="og:image"
           content={
             lang === 'es'
-              ? '/public/card_images/cardImgProyectosEs.png'
-              : '/public/card_images/cardImgProjectsEn.png'
+              ? '/card_images/cardImgProyectosEs.png'
+              : '/card_images/cardImgProjectsEn.png'
           }
         />
+        <meta property="og:url" content="https://www.fedecode.com" />
+        <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />

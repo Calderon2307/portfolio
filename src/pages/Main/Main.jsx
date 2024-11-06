@@ -20,7 +20,7 @@ const Main = () => {
         />
         <meta
           name="keywords"
-          content="desarrollador web, frontend, desarrollo móvil, UI/UX, aplicaciones Android, proyectos innovadores, soluciones digitales, JavaScript, React, HTML, CSS, programador web"
+          content="desarrollador web, frontend, desarrollo móvil, UI/UX, aplicaciones Android, proyectos innovadores, soluciones digitales, JavaScript, React, HTML, CSS, programador web, fedecode, fede, FedeCode"
         />
         <meta
           property="og:title"
@@ -34,18 +34,20 @@ const Main = () => {
           property="og:description"
           content={
             lang === 'es'
-              ? 'Soy Fede, desarrollador web especializado en frontend y desarrollo Android, con experiencia en diseño UI/UX. Siempre abierto a colaborar en proyectos innovadores. ¡No dudes en contactarme!'
-              : "I'm Fede, a web developer specialized in frontend and Android development, with experience in UI/UX design. Always open to collaborating on innovative projects. Feel free to contact me!"
+              ? 'Soy Fede, desarrollador Web frontend y Android con experiencia en diseño UI/UX. Abierto a colaborar en proyectos innovadores. ¡Contáctame!'
+              : "I'm Fede, a web developer in frontend and Android with UI/UX design experience. Open to innovative projects. Feel free to reach out!"
           }
         />
         <meta
           property="og:image"
           content={
             lang === 'es'
-              ? '/public/card_images/cardImgEs.png'
-              : '/public/card_images/cardImgEn.png'
+              ? '/card_images/cardImgEs.png'
+              : '/card_images/cardImgEn.png'
           }
         />
+        <meta property="og:url" content="https://www.fedecode.com" />
+        <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />

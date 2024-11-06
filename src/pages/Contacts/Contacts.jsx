@@ -17,7 +17,7 @@ const Contacts = () => {
         />
         <meta
           name="keywords"
-          content="contacto FedeCode, contacto desarrollador web, redes sociales FedeCode, proyectos, colaboraciones, desarrollador frontend, desarrollador Android"
+          content="contacto FedeCode, contacto desarrollador web, redes sociales FedeCode, proyectos, colaboraciones, desarrollador frontend, desarrollador Android, fedecode, fede"
         />
         <meta
           property="og:title"
@@ -29,18 +29,20 @@ const Contacts = () => {
           property="og:description"
           content={
             lang === 'es'
-              ? 'Si quieres ponerte en contacto conmigo, aquí encontrarás mis redes sociales y formas de comunicación. ¡Escríbeme si te interesa hablar sobre proyectos o colaborar!'
-              : 'If you’d like to reach out, here you’ll find my social media and ways to contact me. Let’s talk about projects or collaborations!'
+              ? 'Soy Fede, desarrollador web. Encuentra aquí mis redes y formas de contacto. ¡Hablemos de proyectos o colaboraciones!'
+              : "I'm Fede, a web developer. Here you’ll find my social media and contact options. Let’s talk about projects or collaborations!"
           }
         />
         <meta
           property="og:image"
           content={
             lang === 'es'
-              ? '/public/card_images/cardImgContactosEs.png'
-              : '/public/card_images/cardImgContactsEn.png'
+              ? '/card_images/cardImgContactosEs.png'
+              : '/card_images/cardImgContactsEn.png'
           }
         />
+        <meta property="og:url" content="https://www.fedecode.com" />
+        <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />

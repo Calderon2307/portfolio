@@ -19,7 +19,7 @@ const contacts = [
   {
     nombre: 'Linkedin',
     logo: linkedin,
-    link: 'https://www.linkedin.com/in/federico-calderon-6a8b5b23b/',
+    link: 'https://www.linkedin.com/in/federico-calderon-230715-v',
     info: 'Federico Calderon',
   },
   {
