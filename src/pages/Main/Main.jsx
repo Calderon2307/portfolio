@@ -47,6 +47,7 @@ const Main = () => {
           }
         />
         <meta property="og:url" content="https://www.fedecode.com" />
+        <meta property="og:site_name" content="Fede Code" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
       </Helmet>

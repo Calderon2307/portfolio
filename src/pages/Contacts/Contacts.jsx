@@ -43,6 +43,7 @@ const Contacts = () => {
         />
         <meta property="og:url" content="https://www.fedecode.com" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Fede Code" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />
