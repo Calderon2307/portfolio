@@ -37,8 +37,8 @@ const Contacts = () => {
           property="og:image"
           content={
             lang === 'es'
-              ? '/card_images/cardImgContactosEs.png'
-              : '/card_images/cardImgContactsEn.png'
+              ? 'https://fedecode.com/card_images/cardImgContactosEs.png'
+              : 'https://fedecode.com/card_images/cardImgContactsEn.png'
           }
         />
         <meta property="og:url" content="https://www.fedecode.com" />

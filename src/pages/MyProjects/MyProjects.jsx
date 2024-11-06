@@ -93,8 +93,8 @@ const MyProjects = () => {
           property="og:image"
           content={
             lang === 'es'
-              ? '/card_images/cardImgProyectosEs.png'
-              : '/card_images/cardImgProjectsEn.png'
+              ? 'https://fedecode.com/card_images/cardImgProyectosEs.png'
+              : 'https://fedecode.com/card_images/cardImgProjectsEn.png'
           }
         />
         <meta property="og:url" content="https://www.fedecode.com" />

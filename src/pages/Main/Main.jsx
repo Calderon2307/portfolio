@@ -42,8 +42,8 @@ const Main = () => {
           property="og:image"
           content={
             lang === 'es'
-              ? '/card_images/cardImgEs.png'
-              : '/card_images/cardImgEn.png'
+              ? 'https://fedecode.com/card_images/cardImgEs.png'
+              : 'https://fedecode.com/card_images/cardImgEn.png'
           }
         />
         <meta property="og:url" content="https://www.fedecode.com" />

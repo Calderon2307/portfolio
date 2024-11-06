@@ -69,8 +69,8 @@ const AboutMe = () => {
           property="og:image"
           content={
             lang === 'es'
-              ? '/card_images/cardImgSobreEs.png'
-              : '/card_images/cardImgAboutEn.png'
+              ? 'https://fedecode.com/card_images/cardImgSobreEs.png'
+              : 'https://fedecode.com/card_images/cardImgAboutEn.png'
           }
         />
         <meta property="og:url" content="https://www.fedecode.com" />
