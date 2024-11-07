@@ -67,67 +67,6 @@ const MyProjects = () => {
     <>
       <Helmet>
         <title>{lang === 'es' ? 'Proyectos' : 'Projects'} | FedeCode</title>
-        <link rel="canonical" href="https://fedecode.com/projects" />
-        <meta
-          name="description"
-          content="Soy Fede (FedeCode), un desarrollador web especializado en frontend y desarrollo Android. Aquí puedes ver mis proyectos más destacados en desarrollo web y aplicaciones móviles. Uso tecnologías como React, JavaScript, Kotlin y más para crear soluciones innovadoras que impactan positivamente."
-        />
-        {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://fedecode.com/projects" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content={
-            lang === 'es'
-              ? 'FedeCode | Desarrollador Web y Android'
-              : 'FedeCode | Web & Android Dev'
-          }
-        />
-        <meta
-          property="og:description"
-          content={
-            lang === 'es'
-              ? 'Soy Fede, desarrollador web en frontend y Android. Explora mis proyectos en soluciones web y móviles con React y JavaScript. ¡Explora mi trabajo!'
-              : "I'm Fede, a frontend and Android developer. Explore my web and mobile projects using React and JavaScript. Check out my work!"
-          }
-        />
-        <meta
-          property="og:image"
-          content={
-            lang === 'es'
-              ? 'https://fedecode.com/card_images/cardImgProyectosEs.jpg'
-              : 'https://fedecode.com/card_images/cardImgProjectsEn.jpg'
-          }
-        />
-        <meta property="og:site_name" content="Fede Code" />
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="fedecode.com" />
-        <meta property="twitter:url" content="https://fedecode.com/projects" />
-        <meta
-          name="twitter:title"
-          content={
-            lang === 'es'
-              ? 'FedeCode | Desarrollador Web y Android'
-              : 'FedeCode | Web & Android Dev'
-          }
-        />
-        <meta
-          name="twitter:description"
-          content={
-            lang === 'es'
-              ? 'Soy Fede, desarrollador web en frontend y Android. Explora mis proyectos en soluciones web y móviles con React y JavaScript. ¡Explora mi trabajo!'
-              : "I'm Fede, a frontend and Android developer. Explore my web and mobile projects using React and JavaScript. Check out my work!"
-          }
-        />
-        <meta
-          name="twitter:image"
-          content={
-            lang === 'es'
-              ? 'https://fedecode.com/card_images/cardImgProyectosEs.jpg'
-              : 'https://fedecode.com/card_images/cardImgProjectsEn.jpg'
-          }
-        />
       </Helmet>
       <Header />
       <section className={`${style.contentWrapper}`}>
