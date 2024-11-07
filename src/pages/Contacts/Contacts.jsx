@@ -39,8 +39,8 @@ const Contacts = () => {
           property="og:image"
           content={
             lang === 'es'
-              ? 'https://fedecode.com/card_images/cardImgContactosEs.png'
-              : 'https://fedecode.com/card_images/cardImgContactsEn.png'
+              ? 'https://fedecode.com/card_images/cardImgContactosEs.jpg'
+              : 'https://fedecode.com/card_images/cardImgContactsEn.jpg'
           }
         />
         <meta property="og:site_name" content="Fede Code" />
@@ -68,8 +68,8 @@ const Contacts = () => {
           name="twitter:image"
           content={
             lang === 'es'
-              ? 'https://fedecode.com/card_images/cardImgEs.png'
-              : 'https://fedecode.com/card_images/cardImgEn.png'
+              ? 'https://fedecode.com/card_images/cardImgContactosEs.jpg'
+              : 'https://fedecode.com/card_images/cardImgContactsEn.jpg'
           }
         />
       </Helmet>

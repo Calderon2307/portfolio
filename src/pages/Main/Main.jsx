@@ -42,8 +42,8 @@ const Main = () => {
           property="og:image"
           content={
             lang === 'es'
-              ? 'https://fedecode.com/card_images/cardImgEs.png'
-              : 'https://fedecode.com/card_images/cardImgEn.png'
+              ? 'https://fedecode.com/card_images/cardImgEs.jpg'
+              : 'https://fedecode.com/card_images/cardImgEn.jpg'
           }
         />
         <meta property="og:site_name" content="Fede Code" />
@@ -71,8 +71,8 @@ const Main = () => {
           name="twitter:image"
           content={
             lang === 'es'
-              ? 'https://fedecode.com/card_images/cardImgEs.png'
-              : 'https://fedecode.com/card_images/cardImgEn.png'
+              ? 'https://fedecode.com/card_images/cardImgEs.jpg'
+              : 'https://fedecode.com/card_images/cardImgEn.jpg'
           }
         />
       </Helmet>
