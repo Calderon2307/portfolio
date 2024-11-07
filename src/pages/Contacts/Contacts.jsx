@@ -10,19 +10,21 @@ const Contacts = () => {
   return (
     <>
       <Helmet>
-        <title>{lang === 'es' ? 'Contactos' : 'Contacts'} - FedeCode</title>
+        <title>{lang === 'es' ? 'Contactos' : 'Contacts'} | FedeCode</title>
+        <link rel="canonical" href="https://fedecode.com/contacts" />
         <meta
           name="description"
           content="Si quieres ponerte en contacto conmigo, aquí encontrarás todas mis redes sociales y formas de comunicación. No dudes en escribirme para hablar sobre proyectos o colaboraciones."
         />
-        <meta
-          name="keywords"
-          content="contacto FedeCode, contacto desarrollador web, redes sociales FedeCode, proyectos, colaboraciones, desarrollador frontend, desarrollador Android, fedecode, fede"
-        />
+        {/* Facebook Meta Tags */}
+        <meta property="og:url" content="https://fedecode.com/contacts" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content={
-            lang === 'es' ? 'Contactos - FedeCode' : 'Contacts - FedeCode'
+            lang === 'es'
+              ? 'FedeCode | Desarrollador Web y Android'
+              : 'FedeCode | Web & Android Dev'
           }
         />
         <meta
@@ -41,10 +43,35 @@ const Contacts = () => {
               : 'https://fedecode.com/card_images/cardImgContactsEn.png'
           }
         />
-        <meta property="og:url" content="https://www.fedecode.com" />
-        <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Fede Code" />
-        <meta name="robots" content="index, follow" />
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="fedecode.com" />
+        <meta property="twitter:url" content="https://fedecode.com/contacts" />
+        <meta
+          name="twitter:title"
+          content={
+            lang === 'es'
+              ? 'FedeCode | Desarrollador Web y Android'
+              : 'FedeCode | Web & Android Dev'
+          }
+        />
+        <meta
+          name="twitter:description"
+          content={
+            lang === 'es'
+              ? 'Soy Fede, desarrollador web. Encuentra aquí mis redes y formas de contacto. ¡Hablemos de proyectos o colaboraciones!'
+              : "I'm Fede, a web developer. Here you’ll find my social media and contact options. Let’s talk about projects or collaborations!"
+          }
+        />
+        <meta
+          name="twitter:image"
+          content={
+            lang === 'es'
+              ? 'https://fedecode.com/card_images/cardImgEs.png'
+              : 'https://fedecode.com/card_images/cardImgEn.png'
+          }
+        />
       </Helmet>
       <Header />
       <section className={`${style.contentWrapper}`}>

@@ -14,7 +14,7 @@ const InfoSection = () => {
     <article className={`${style.personalInfoContainer}`}>
       <img
         src={profilePic}
-        alt="Profile Picture"
+        alt="FedeCode - Profile Picture"
         className={`${style.personalImg}`}
       />
       <section className={`${style.personalInfo}`}>
