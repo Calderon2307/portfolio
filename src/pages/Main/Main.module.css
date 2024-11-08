@@ -147,6 +147,12 @@
   }
 }
 
+@media (max-width: 1070px) {
+  .presentationParagraph {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 920px) {
   .presentation {
     flex-flow: column nowrap;

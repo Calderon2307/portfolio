@@ -15,7 +15,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   gap: 2rem;
-  max-width: 75%;
+  width: 75%;
   max-height: 90%;
   border-radius: 1rem;
   padding: 2rem;
@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   gap: 2rem;
-  max-width: 60%;
+  min-width: 60%;
 }
 
 .contact {
