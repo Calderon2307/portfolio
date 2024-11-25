@@ -1,4 +1,4 @@
-const fechaNacimiento = new Date(1999, 11, 24);
+const fechaNacimiento = new Date(1999, 10, 24);
 
 function calcularEdad(fechaNacimiento) {
   const actual = new Date();
