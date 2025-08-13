@@ -25,7 +25,7 @@ export const personalInfoEs = [
   { field: 'Disponibilidad', value: 'En remoto' },
   {
     field: 'Especialidad',
-    value: 'Desarrollo Frontend y Desarrollo de Aplicaciones Android',
+    value: 'Desarrollo Fullstack y Desarrollo de Aplicaciones Android',
   },
 ];
 
@@ -45,6 +45,6 @@ export const personalInfoEn = [
   { field: 'Availability', value: 'Remote' },
   {
     field: 'Specialty',
-    value: 'Frontend Development and Android App Development',
+    value: 'Fullstack Development and Android App Development',
   },
 ];

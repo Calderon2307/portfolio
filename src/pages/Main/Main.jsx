@@ -32,11 +32,13 @@ const Main = () => {
               <span className={`${style.strong} ${style.name}`}>
                 Fede Calderon
               </span>
-              , un Desarrollador Web enfocado y apasionado en el{' '}
-              <span className={`${style.strong}`}>Desarrollo Frontend</span> en
-              camino a ser un{' '}
-              <span className={`${style.strong}`}>Desarrollador Fullstack</span>
-              , con habilidades y conocimientos en el{' '}
+              , un{' '}
+              <span className={`${style.strong}`}>
+                Desarrollador Web Fullstack
+              </span>{' '}
+              con un fuerte enfoque y pasión por el{' '}
+              <span className={`${style.strong}`}>Desarrollo Frontend</span>, y
+              con habilidades y conocimientos en el{' '}
               <span className={`${style.strong}`}>
                 Desarrollo de Aplicaciones Android
               </span>
@@ -58,17 +60,17 @@ const Main = () => {
         ) : (
           <article className={`${style.presentationPContainer}`}>
             <p className={`${style.presentationParagraph}`}>
-              Hello! I am{' '}
+              Hi! I&apos;m{' '}
               <span className={`${style.strong} ${style.name}`}>
                 Fede Calderon
               </span>
-              , a Web Developer focused and passionate about{' '}
-              <span className={`${style.strong}`}>Frontend Development</span> on
-              the path to becoming a{' '}
-              <span className={`${style.strong}`}>Fullstack Developer</span>,
-              with skills and knowledge in{' '}
+              , a{' '}
+              <span className={`${style.strong}`}>Fullstack Web Developer</span>{' '}
+              with a strong focus and passion for{' '}
+              <span className={`${style.strong}`}>Frontend Development</span>,
+              and with skills and knowledge in{' '}
               <span className={`${style.strong}`}>Android App Development</span>
-              . My goal is to keep refining my skills to build{' '}
+              . My goal is to keep improving my abilities to build{' '}
               <span className={`${style.strong}`}>innovative solutions</span>{' '}
               that have a{' '}
               <span className={`${style.strong}`}>positive impact</span> on

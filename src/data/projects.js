@@ -3,22 +3,28 @@ import luxuryCars from '@assets/Projects_Logos/Luxury_Cars.png';
 import nasaJS from '@assets/Projects_Logos/Nasa_JS.png';
 import nasaReact from '@assets/Projects_Logos/Nasa_React.png';
 import pokedex from '@assets/Projects_Logos/Pokedex.png';
+import pokedexV2 from '@assets/Projects_Logos/PokedexV2.png';
 import primeraWeb from '@assets/Projects_Logos/Primera_Web.png';
 import saboresEnReserva from '@assets/Projects_Logos/Sabores_en_Reserva.png';
 import taskMe from '@assets/Projects_Logos/Task_Me.png';
+import taskMeBackend from '@assets/Projects_Logos/Task_Me_Backend.png';
 import theSpace from '@assets/Projects_Logos/The_Space.png';
 import triviaJS from '@assets/Projects_Logos/Trivia_JS.png';
 import triviaReact from '@assets/Projects_Logos/Trivia_React.png';
 
 import css from '@assets/Technologies_Logos/css.png';
 import express from '@assets/Technologies_Logos/expressjs.webp';
-import node from '@assets/Technologies_Logos/node.png';
 import html from '@assets/Technologies_Logos/html.png';
+import java from '@assets/Technologies_Logos/java.webp';
 import javascript from '@assets/Technologies_Logos/javascript.png';
 import jetpackcompose from '@assets/Technologies_Logos/jetpackcompose.png';
 import kotlin from '@assets/Technologies_Logos/kotlin.png';
+import node from '@assets/Technologies_Logos/node.png';
+import postgre from '@assets/Technologies_Logos/postgre.webp';
 import react from '@assets/Technologies_Logos/react.webp';
 import sass from '@assets/Technologies_Logos/sass.png';
+import springBoot from '@assets/Technologies_Logos/springBoot.png';
+import typescript from '@assets/Technologies_Logos/typescript.png';
 import vite from '@assets/Technologies_Logos/vite.png';
 import yarn from '@assets/Technologies_Logos/yarn.png';
 
@@ -144,6 +150,41 @@ export const projectsEs = [
     descripcion:
       'Este proyecto personal lo desarrollé mientras practicaba mis habilidades en desarrollo web. Está diseñado para consumir la "Poke API". Como fan de la franquicia, planeo lanzar una versión con React y añadir más funcionalidades que mejoren la experiencia del usuario.',
     link: 'https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Pokedex_JS',
+    highlight: 'normal',
+  },
+  {
+    nombre: 'Pokedex-V2',
+    imagen: pokedexV2,
+    tecnologias: [
+      {
+        nombre: 'HTML',
+        imagen: html,
+      },
+      {
+        nombre: 'CSS',
+        imagen: css,
+      },
+      {
+        nombre: 'TypeScript',
+        imagen: typescript,
+      },
+      {
+        nombre: 'React (TSX)',
+        imagen: react,
+      },
+      {
+        nombre: 'Vite',
+        imagen: vite,
+      },
+      {
+        nombre: 'Yarn',
+        imagen: yarn,
+      },
+    ],
+    tipo: 'web',
+    descripcion:
+      'Este proyecto personal es una mejora de mi proyecto anterior, "Pokedex". Lo desarrollé con React y TypeScript, utilizando Axios para consumir la PokeAPI. Como fan de la franquicia, planeo seguir añadiendo mejoras para optimizar la experiencia de usuario y continuar perfeccionando mis habilidades en TypeScript.',
+    link: 'https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React',
     highlight: 'featured',
   },
   {
@@ -198,7 +239,7 @@ export const projectsEs = [
     descripcion:
       'Este fue mi proyecto final para la materia de "Programación Web". Me encargué del desarrollo del frontend, utilizando React y tecnologías modernas como Vite para garantizar un rendimiento óptimo y una experiencia de usuario fluida.',
     link: 'https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Proyecto_Sabores-En-Reserva_React',
-    highlight: 'featured',
+    highlight: 'normal',
   },
   {
     nombre: 'Task Me!',
@@ -226,6 +267,29 @@ export const projectsEs = [
       'Este proyecto fue desarrollado en equipo para la materia de "Programación Móvil". Utilizamos Jetpack Compose y Kotlin para crear una aplicación móvil moderna y eficiente. Actualmente, sigue en desarrollo, con planes para expandir sus funcionalidades.',
     link: '#',
     highlight: 'normal',
+  },
+  {
+    nombre: 'Task Me! - Backend',
+    imagen: taskMeBackend,
+    tecnologias: [
+      {
+        nombre: 'Java',
+        imagen: java,
+      },
+      {
+        nombre: 'Postgre SQL',
+        imagen: postgre,
+      },
+      {
+        nombre: 'Spring Boot',
+        imagen: springBoot,
+      },
+    ],
+    tipo: 'web',
+    descripcion:
+      'Este proyecto fue desarrollado para la materia de "Programación N-Capas". Se utilizo Spring Boot para crear una API moderna y eficiente. Es una version academica de un proyecto mucho mas grande.',
+    link: 'https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe',
+    highlight: 'featured',
   },
   {
     nombre: 'El Espacio',
@@ -432,6 +496,41 @@ export const projectsEn = [
     descripcion:
       'This personal project was developed while honing my web development skills. It is designed to consume the "Poke API". As a fan of the franchise, I plan to release a React version and add more features to enhance user experience.',
     link: 'https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Pokedex_JS',
+    highlight: 'normal',
+  },
+  {
+    nombre: 'Pokedex-V2',
+    imagen: pokedexV2,
+    tecnologias: [
+      {
+        nombre: 'HTML',
+        imagen: html,
+      },
+      {
+        nombre: 'CSS',
+        imagen: css,
+      },
+      {
+        nombre: 'TypeScript',
+        imagen: typescript,
+      },
+      {
+        nombre: 'React',
+        imagen: react,
+      },
+      {
+        nombre: 'Vite',
+        imagen: vite,
+      },
+      {
+        nombre: 'Yarn',
+        imagen: yarn,
+      },
+    ],
+    tipo: 'web',
+    descripcion:
+      'This personal project is an improvement of my previous "Pokedex" project. I developed it using React and TypeScript, leveraging Axios to consume the PokeAPI. As a fan of the franchise, I plan to keep adding enhancements to improve the user experience and further refine my TypeScript skills.',
+    link: 'https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React',
     highlight: 'featured',
   },
   {
@@ -486,7 +585,7 @@ export const projectsEn = [
     descripcion:
       'This was my final project for the "Web Programming" course. I was responsible for frontend development, using React and modern technologies like Vite to ensure optimal performance and a seamless user experience.',
     link: 'https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Proyecto_Sabores-En-Reserva_React',
-    highlight: 'featured',
+    highlight: 'normal',
   },
   {
     nombre: 'Task Me!',
@@ -506,6 +605,29 @@ export const projectsEn = [
       'This project was developed as part of a team for the "Mobile Programming" course. We used Jetpack Compose and Kotlin to create a modern, efficient mobile application. It is still under development, with plans to expand its features.',
     link: '#',
     highlight: 'normal',
+  },
+  {
+    nombre: 'Task Me! - Backend',
+    imagen: taskMeBackend,
+    tecnologias: [
+      {
+        nombre: 'Java',
+        imagen: java,
+      },
+      {
+        nombre: 'Postgre SQL',
+        imagen: postgre,
+      },
+      {
+        nombre: 'Spring Boot',
+        imagen: springBoot,
+      },
+    ],
+    tipo: 'web',
+    descripcion:
+      'This project was developed for the "N-Layer Programming" course. Spring Boot was used to create a modern and efficient API. It’s an academic version of a much larger project.',
+    link: 'https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe',
+    highlight: 'featured',
   },
   {
     nombre: 'The Space',

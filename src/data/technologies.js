@@ -10,21 +10,26 @@ import git from '@assets/Technologies_Logos/git.png';
 import github from '@assets/Technologies_Logos/github.png';
 import html from '@assets/Technologies_Logos/html.png';
 import insomnia from '@assets/Technologies_Logos/insomnia.png';
+import java from '@assets/Technologies_Logos/java.webp';
 import javascript from '@assets/Technologies_Logos/javascript.png';
 import jetpackcompose from '@assets/Technologies_Logos/jetpackcompose.png';
 import kotlin from '@assets/Technologies_Logos/kotlin.png';
 import node from '@assets/Technologies_Logos/node.png';
+import postgre from '@assets/Technologies_Logos/postgre.webp';
 import prettier from '@assets/Technologies_Logos/prettier.png';
 import react from '@assets/Technologies_Logos/react.webp';
 import sass from '@assets/Technologies_Logos/sass.png';
+import springboot from '@assets/Technologies_Logos/springBoot.png';
+import sql from '@assets/Technologies_Logos/sql.png';
 import tailwind from '@assets/Technologies_Logos/tailwind.png';
+import typescript from '@assets/Technologies_Logos/typescript.png';
 import visual from '@assets/Technologies_Logos/visual.png';
 import vite from '@assets/Technologies_Logos/vite.png';
 import yarn from '@assets/Technologies_Logos/yarn.png';
 
 export const technologiesEs = [
   {
-    nombre: 'Api REST (consumo)',
+    nombre: 'REST API',
     imagen: api,
     tipo: 'frontend',
     nivel: 'avanzado',
@@ -93,7 +98,13 @@ export const technologiesEs = [
     nombre: 'Insomnia',
     imagen: insomnia,
     tipo: 'backend',
-    nivel: 'intermedio-avanzado',
+    nivel: 'avanzado',
+  },
+  {
+    nombre: 'Java',
+    imagen: java,
+    tipo: 'backend',
+    nivel: 'avanzado',
   },
   {
     nombre: 'JavaScript',
@@ -120,13 +131,19 @@ export const technologiesEs = [
     nivel: 'intermedio',
   },
   {
+    nombre: 'Postgre SQL',
+    imagen: postgre,
+    tipo: 'backend',
+    nivel: 'intermedio',
+  },
+  {
     nombre: 'Prettier',
     imagen: prettier,
     tipo: 'frontend',
     nivel: 'avanzado',
   },
   {
-    nombre: 'React (JSX)',
+    nombre: 'React (JSX/TSX)',
     imagen: react,
     tipo: 'frontend',
     nivel: 'avanzado',
@@ -138,10 +155,28 @@ export const technologiesEs = [
     nivel: 'avanzado',
   },
   {
+    nombre: 'Spring Boot',
+    imagen: springboot,
+    tipo: 'backend',
+    nivel: 'avanzado',
+  },
+  {
+    nombre: 'SQL',
+    imagen: sql,
+    tipo: 'backend',
+    nivel: 'intermedio',
+  },
+  {
     nombre: 'Tailwind',
     imagen: tailwind,
     tipo: 'frontend',
     nivel: 'intermedio',
+  },
+  {
+    nombre: 'TypeScript',
+    imagen: typescript,
+    tipo: 'frontend',
+    nivel: 'avanzado',
   },
   {
     nombre: 'Visual Studio Code',
@@ -165,7 +200,7 @@ export const technologiesEs = [
 
 export const technologiesEn = [
   {
-    nombre: 'REST API (consumption)',
+    nombre: 'REST API',
     imagen: api,
     tipo: 'frontend',
     nivel: 'advanced',
@@ -234,7 +269,13 @@ export const technologiesEn = [
     nombre: 'Insomnia',
     imagen: insomnia,
     tipo: 'backend',
-    nivel: 'intermediate-advanced',
+    nivel: 'advanced',
+  },
+  {
+    nombre: 'Java',
+    imagen: java,
+    tipo: 'backend',
+    nivel: 'advanced',
   },
   {
     nombre: 'JavaScript',
@@ -261,13 +302,19 @@ export const technologiesEn = [
     nivel: 'intermediate',
   },
   {
+    nombre: 'Postgre SQL',
+    imagen: postgre,
+    tipo: 'backend',
+    nivel: 'intermediate',
+  },
+  {
     nombre: 'Prettier',
     imagen: prettier,
     tipo: 'frontend',
     nivel: 'advanced',
   },
   {
-    nombre: 'React (JSX)',
+    nombre: 'React (JSX/TSX)',
     imagen: react,
     tipo: 'frontend',
     nivel: 'advanced',
@@ -279,10 +326,28 @@ export const technologiesEn = [
     nivel: 'advanced',
   },
   {
+    nombre: 'Spring Boot',
+    imagen: springboot,
+    tipo: 'backend',
+    nivel: 'advanced',
+  },
+  {
+    nombre: 'SQL',
+    imagen: sql,
+    tipo: 'backend',
+    nivel: 'intermediate',
+  },
+  {
     nombre: 'Tailwind',
     imagen: tailwind,
     tipo: 'frontend',
     nivel: 'intermediate',
+  },
+  {
+    nombre: 'TypeScript',
+    imagen: typescript,
+    tipo: 'frontend',
+    nivel: 'advanced',
   },
   {
     nombre: 'Visual Studio Code',
